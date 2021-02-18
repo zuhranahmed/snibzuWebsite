@@ -307,6 +307,14 @@ footer {
     .fa-twitter-square {
       color: #00acee;
     }
+
+    .fab {
+      transition: all 0.3s ease;
+    }
+    .fab:hover {
+      opacity: 0.8;
+      transform: translateY(-3px);
+    }
   }
 }
 
@@ -408,6 +416,10 @@ footer {
           border-radius: 5px;
           color: #333;
           font-family: "Montserrat", sans-serif;
+
+          &:focus {
+            border: 1px solid #f6821f;
+          }
         }
         textarea {
           outline: none;
@@ -419,6 +431,10 @@ footer {
           border-radius: 5px;
           color: #333;
           font-family: "Montserrat", sans-serif;
+
+          &:focus {
+            border: 1px solid #f6821f;
+          }
         }
       }
     }
@@ -474,6 +490,13 @@ footer {
         }
         .fa-twitter-square {
           color: #00acee;
+        }
+        .fab {
+          transition: all 0.3s ease;
+        }
+        .fab:hover {
+          opacity: 0.8;
+          transform: translateY(-3px);
         }
       }
     }

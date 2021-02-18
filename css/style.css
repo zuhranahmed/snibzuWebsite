@@ -343,6 +343,17 @@ footer .social .fa-twitter-square {
   color: #00acee;
 }
 
+footer .social .fab {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .social .fab:hover {
+  opacity: 0.8;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 .about-us,
 .contact-us {
   margin: 6rem 0;
@@ -455,6 +466,12 @@ footer .social .fa-twitter-square {
   font-family: "Montserrat", sans-serif;
 }
 
+.form__container form .name input:focus,
+.form__container form .email input:focus,
+.form__container form .message input:focus {
+  border: 1px solid #f6821f;
+}
+
 .form__container form .name textarea,
 .form__container form .email textarea,
 .form__container form .message textarea {
@@ -467,6 +484,12 @@ footer .social .fa-twitter-square {
   border-radius: 5px;
   color: #333;
   font-family: "Montserrat", sans-serif;
+}
+
+.form__container form .name textarea:focus,
+.form__container form .email textarea:focus,
+.form__container form .message textarea:focus {
+  border: 1px solid #f6821f;
 }
 
 .connect {
@@ -529,5 +552,16 @@ footer .social .fa-twitter-square {
 
 .connect__content .media__social .fa-twitter-square {
   color: #00acee;
+}
+
+.connect__content .media__social .fab {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.connect__content .media__social .fab:hover {
+  opacity: 0.8;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 /*# sourceMappingURL=style.css.map */
