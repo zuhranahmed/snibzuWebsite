@@ -30,5 +30,5 @@ gsap.from(".services__card", {
 gsap.from(".iso", {
   opacity: 0,
   duration: 1,
-  delay: 3.8,
+  delay: 3.7,
 });
