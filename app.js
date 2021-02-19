@@ -21,3 +21,9 @@ gsap.from(".services__card", {
   delay: 2,
   stagger: 0.6,
 });
+
+gsap.from(".iso", {
+  opacity: 0,
+  duration: 1,
+  delay: 3.8,
+});
