@@ -18,6 +18,10 @@ body {
   color: #333;
   background-color: #fff;
   line-height: 1.5;
+
+  @media screen and (max-width: 61.25em) {
+    padding: 0 1.5rem;
+  }
 }
 ul {
   list-style: none;
@@ -42,6 +46,14 @@ img {
   letter-spacing: 0.6px;
   transition: all 0.3s ease;
   display: block;
+  @media screen and (max-width: 48em) {
+    padding: 0.3rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    padding: 0.2rem 1rem;
+    font-size: 1.4rem;
+  }
 }
 
 .btn-main:hover {
@@ -68,6 +80,14 @@ img {
   float: right;
   letter-spacing: 0.6px;
   transition: all 0.3s ease;
+  @media screen and (max-width: 48em) {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    padding: 0.75rem 1rem;
+    font-size: 1.4rem;
+  }
 
   &:hover {
     background-color: #f6821f;
@@ -84,6 +104,12 @@ img {
   letter-spacing: 0.6px;
   display: inline-block;
   transition: all 0.3s ease;
+  @media screen and (max-width: 48em) {
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    font-size: 1.4rem;
+  }
 
   .fas {
     margin-left: 5px;
@@ -109,6 +135,9 @@ img {
   align-items: center;
   justify-content: space-between;
   margin: 2.4rem 0;
+  @media screen and (max-width: 48em) {
+    margin: 2rem 0;
+  }
 
   &__logo {
     display: flex;
@@ -119,11 +148,25 @@ img {
       width: 4.8rem;
       height: 4.8rem;
       margin-right: 0.7rem;
+      @media screen and (max-width: 48em) {
+        width: 4.4rem;
+        height: 4.4rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        width: 3rem;
+        height: 3rem;
+      }
     }
     span {
       font-weight: 700;
       font-size: 2.2rem;
       color: #333;
+      @media screen and (max-width: 48em) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -135,6 +178,14 @@ img {
       margin-right: 2rem;
       font-size: 1.6rem;
       font-weight: 400;
+      @media screen and (max-width: 48em) {
+        font-size: 1.4rem;
+        margin-right: 1.6rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.4rem;
+        margin-right: 0.8rem;
+      }
 
       a {
         color: #333;
@@ -147,6 +198,12 @@ img {
 
     &--link:last-child {
       margin-left: 2rem;
+      @media screen and (max-width: 48em) {
+        margin-left: 1rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        margin-left: 0.4rem;
+      }
     }
   }
 }
@@ -155,13 +212,35 @@ img {
 
 .hero {
   background-color: #3e5eab;
-  padding: 6.5rem 20.1rem;
+  padding: 6.5rem 20rem;
   color: #fff;
   margin-bottom: 6rem;
+  @media screen and (max-width: 61.25em) {
+    padding: 5.5rem 17.5rem;
+  }
+  @media screen and (max-width: 48em) {
+    padding: 3.5rem 12.5rem;
+    margin-bottom: 4rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    height: 60vh;
+    padding: 2rem 3.5rem;
+    display: flex;
+    align-items: center;
+  }
 
   &__content {
     padding: 4rem 5rem;
     border: 5px solid #fff;
+    @media screen and (max-width: 61.25em) {
+      padding: 3.5rem 4.5rem;
+    }
+    @media screen and (max-width: 48em) {
+      padding: 2.5rem 3.5rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      padding: 2rem 3rem;
+    }
 
     &--heading {
       font-family: "Playfair Display", serif;
@@ -169,6 +248,22 @@ img {
       width: 85%;
       margin-bottom: 2rem;
       font-size: 4.2rem;
+
+      @media screen and (max-width: 61.25em) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: 48em) {
+        font-size: 3rem;
+        line-height: 35px;
+        margin-bottom: 1.5rem;
+        width: 90%;
+      }
+      @media screen and (max-width: 29.25em) {
+        font-size: 2.2rem;
+        line-height: 30px;
+        margin-bottom: 1.25rem;
+        width: 100%;
+      }
     }
   }
 }
@@ -181,6 +276,19 @@ img {
   gap: 5.5rem;
   margin-bottom: 6rem;
 
+  @media screen and (max-width: 61.25em) {
+    gap: 4.5rem;
+  }
+  @media screen and (max-width: 48em) {
+    margin-bottom: 4rem;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 29.25em) {
+    gap: 2rem;
+  }
+
   &__card {
     display: flex;
     flex-direction: column;
@@ -189,6 +297,15 @@ img {
     text-align: center;
     padding: 3rem;
     border: 1px solid #ededed;
+    @media screen and (max-width: 61.25em) {
+      padding: 2.5rem;
+    }
+    @media screen and (max-width: 48em) {
+      padding: 2rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      padding: 1rem;
+    }
 
     .fas {
       color: #3e5eab;
@@ -199,6 +316,13 @@ img {
       font-weight: 600;
       font-size: 2.2rem;
       margin-bottom: 1.5rem;
+      @media screen and (max-width: 48em) {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.8rem;
+      }
     }
     &--details {
       font-size: 1.6rem;
@@ -212,6 +336,15 @@ img {
   color: #333;
   font-family: "Playfair Display", serif;
   margin-bottom: 6rem;
+
+  @media screen and (max-width: 48em) {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
 }
 
 // ISO Section
@@ -220,18 +353,49 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  @media screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+
   &__content {
     padding: 6.5rem;
     background-color: #ededed;
+
+    @media screen and (max-width: 61.25em) {
+      padding: 5rem;
+    }
+    @media screen and (max-width: 48em) {
+      padding: 3.5rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      padding: 2.5rem;
+    }
 
     &--heading {
       font-size: 2.4rem;
       margin-bottom: 1.5rem;
       line-height: normal;
+
+      @media screen and (max-width: 61.25em) {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 48em) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.8rem;
+      }
     }
     &--details,
     &--certificates {
       font-size: 1.6rem;
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.4rem;
+        line-height: 1.7;
+      }
     }
   }
 
@@ -250,18 +414,49 @@ img {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 8rem;
 
+  @media screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+    display: none;
+  }
+
   &__content {
     padding: 6.5rem;
     background-color: #ededed;
+
+    @media screen and (max-width: 61.25em) {
+      padding: 5rem;
+    }
+    @media screen and (max-width: 48em) {
+      padding: 3.5rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      padding: 2.5rem;
+    }
 
     &--heading {
       font-size: 2.4rem;
       margin-bottom: 1.5rem;
       line-height: normal;
+      @media screen and (max-width: 61.25em) {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 48em) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.8rem;
+      }
     }
     &--details,
     &--certificates {
       font-size: 1.6rem;
+      @media screen and (max-width: 29.25em) {
+        font-size: 1.4rem;
+        line-height: 1.7;
+      }
     }
   }
 
@@ -273,15 +468,45 @@ img {
   }
 }
 
+.business.mobile {
+  display: none;
+
+  @media screen and (max-width: 48em) {
+    display: block;
+  }
+  @media screen and (max-width: 29.25em) {
+    display: block;
+    margin-bottom: 3rem;
+  }
+}
+
 // Snibzu CTA Section
 .snibzu {
   padding: 5rem 4rem;
   background-color: #3e5eab;
   color: #fff;
+  @media screen and (max-width: 61.25em) {
+    padding: 4rem 3.5rem;
+  }
+  @media screen and (max-width: 48em) {
+    padding: 3rem 2.5rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    padding: 2.5rem 2rem;
+  }
 
   &__cta {
     font-family: "Playfair Display", serif;
     font-size: 3.4rem;
+    @media screen and (max-width: 61.25em) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 48em) {
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      font-size: 1.8rem;
+    }
 
     a {
       color: #f6821f;
@@ -303,8 +528,16 @@ footer {
   padding: 5rem 0;
   line-height: normal;
 
+  @media screen and (max-width: 48em) {
+    flex-direction: column;
+    padding: 3.5rem;
+  }
+
   .copyright {
     font-size: 1.2rem;
+    @media screen and (max-width: 48em) {
+      margin-bottom: 1.5rem;
+    }
   }
   .snibzu-name {
     display: flex;
@@ -312,15 +545,24 @@ footer {
     align-items: center;
     justify-content: center;
     line-height: normal;
+    @media screen and (max-width: 48em) {
+      margin-bottom: 1.5rem;
+    }
 
     .name {
       font-size: 1.6rem;
       color: #f6821f;
       font-weight: 600;
+      @media screen and (max-width: 61.25em) {
+        font-size: 1.4rem;
+      }
     }
     .slogan {
       font-size: 1.2rem;
       color: #3e5eab;
+      @media screen and (max-width: 61.25em) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -357,15 +599,38 @@ footer {
   padding: 7rem 5rem;
   background-color: #3e5eab;
   color: #fff;
+  @media screen and (max-width: 61.25em) {
+    padding: 5.5rem 4rem;
+  }
+  @media screen and (max-width: 48em) {
+    padding: 4.5rem 3.5rem;
+    margin: 4.5rem 0;
+  }
+  @media screen and (max-width: 29.25em) {
+    padding: 3.5rem 2.5rem;
+    margin: 3.5rem 0;
+  }
 
   &__heading {
     font-family: "Playfair Display", serif;
     font-size: 3.4rem;
     line-height: normal;
     font-weight: 700;
+    @media screen and (max-width: 61.25em) {
+      font-size: 3.2rem;
+    }
+    @media screen and (max-width: 48em) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      font-size: 2.6rem;
+    }
   }
   &__slogan {
     font-size: 1.6rem;
+    @media screen and (max-width: 29.25em) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -373,23 +638,54 @@ footer {
 
 .about {
   margin-bottom: 6rem;
+  @media screen and (max-width: 48em) {
+    margin-bottom: 4rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    margin-bottom: 3rem;
+  }
   &__heading {
     font-size: 4.2rem;
     line-height: normal;
     font-family: "Playfair Display", serif;
     margin-bottom: 2rem;
     width: 70%;
+    @media screen and (max-width: 61.25em) {
+      font-size: 4rem;
+    }
+    @media screen and (max-width: 48em) {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      width: 80%;
+    }
+    @media screen and (max-width: 29.25em) {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      width: 90%;
+    }
   }
 
   &__details {
     font-size: 1.6rem;
     margin-bottom: 2rem;
+    @media screen and (max-width: 48em) {
+      margin-bottom: 1.5rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__image {
     width: 100%;
     height: 60rem;
     object-fit: cover;
+    @media screen and (max-width: 48em) {
+      height: 45rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      height: 30rem;
+    }
   }
 }
 
@@ -398,6 +694,10 @@ footer {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 2.5rem;
+  @media screen and (max-width: 29.25em) {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 // Form Section
@@ -407,12 +707,26 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   margin-bottom: 10rem;
+  @media screen and (max-width: 61.25em) {
+    gap: 4rem;
+  }
+  @media screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+    margin-bottom: 6rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    margin-bottom: 4rem;
+    gap: 3rem;
+  }
 
   &__image {
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @media screen and (max-width: 29.25em) {
+        display: none;
+      }
     }
   }
 
@@ -436,6 +750,9 @@ footer {
           margin-bottom: 1rem;
           line-height: normal;
         }
+        @media screen and (max-width: 29.25em) {
+          font-size: 1.4rem;
+        }
 
         input {
           outline: none;
@@ -446,6 +763,9 @@ footer {
           border-radius: 5px;
           color: #333;
           font-family: "Montserrat", sans-serif;
+          @media screen and (max-width: 29.25em) {
+            font-size: 1.4rem;
+          }
 
           &:focus {
             border: 1px solid #f6821f;
@@ -461,6 +781,9 @@ footer {
           border-radius: 5px;
           color: #333;
           font-family: "Montserrat", sans-serif;
+          @media screen and (max-width: 29.25em) {
+            font-size: 1.4rem;
+          }
 
           &:focus {
             border: 1px solid #f6821f;
@@ -477,10 +800,35 @@ footer {
   padding: 7rem 5rem;
   background-color: #ededed;
   margin-bottom: 25rem;
+
+  @media screen and (max-width: 61.25em) {
+    padding: 5.5rem 4rem;
+    margin-bottom: 20rem;
+  }
+  @media screen and (max-width: 48em) {
+    padding: 4rem 3.5rem;
+    margin-bottom: 15rem;
+  }
+  @media screen and (max-width: 29.25em) {
+    padding: 3rem 2.5rem;
+    margin-bottom: 10rem;
+  }
   &__heading {
     font-family: "Playfair Display", serif;
     font-size: 3.4rem;
     margin-bottom: 3rem;
+    @media screen and (max-width: 61.25em) {
+      font-size: 3.2rem;
+      margin-bottom: 2.6rem;
+    }
+    @media screen and (max-width: 48em) {
+      font-size: 2.8rem;
+      margin-bottom: 2.2rem;
+    }
+    @media screen and (max-width: 29.25em) {
+      font-size: 2.4rem;
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__content {
@@ -488,11 +836,17 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     text-align: left;
+    @media screen and (max-width: 48em) {
+      flex-wrap: wrap;
+    }
 
     h3 {
       font-weight: 600;
       font-size: 1.8rem;
       margin-bottom: 1rem;
+      @media screen and (max-width: 61.25em) {
+        font-size: 1.6rem;
+      }
     }
     p {
       font-size: 1.4rem;
