@@ -253,10 +253,13 @@ img {
 
 .navbar__links--link:not(:last-child) a {
   color: #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.navbar__links--link:not(:last-child):hover {
-  border-bottom: 1px solid #333;
+.navbar__links--link:not(:last-child) a:hover {
+  border-bottom: 1px solid #f6821f;
+  color: #f6821f;
 }
 
 .navbar__links--link:last-child {

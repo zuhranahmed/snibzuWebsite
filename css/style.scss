@@ -189,10 +189,11 @@ img {
 
       a {
         color: #333;
-      }
-
-      &:hover {
-        border-bottom: 1px solid #333;
+        transition: all 0.3s ease;
+        &:hover {
+          border-bottom: 1px solid #f6821f;
+          color: #f6821f;
+        }
       }
     }
 
