@@ -128,7 +128,7 @@ img {
   border-bottom: 2px solid #f6821f;
 }
 .container {
-  max-width: 120.8rem;
+  max-width: 144rem;
   margin: 0 auto;
 }
 .navbar {
@@ -317,26 +317,25 @@ img {
 .services {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.5rem;
   margin-bottom: 6rem;
 }
 @media screen and (max-width: 61.25em) {
   .services {
-    gap: 4.5rem;
+    gap: 2.5rem;
   }
 }
 @media screen and (max-width: 48em) {
   .services {
     margin-bottom: 4rem;
-    gap: 3rem;
-    -ms-grid-columns: 1fr;
+    gap: 2rem;
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 29.25em) {
   .services {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 .services__card {
@@ -354,17 +353,17 @@ img {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
   border: 1px solid #ededed;
 }
 @media screen and (max-width: 61.25em) {
   .services__card {
-    padding: 2.5rem;
+    padding: 1.5rem;
   }
 }
 @media screen and (max-width: 48em) {
   .services__card {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 29.25em) {
@@ -609,6 +608,7 @@ img {
 .snibzu__cta a {
   color: #f6821f;
   border-bottom: 2px solid #f6821f;
+  margin-left: 15px;
 }
 .snibzu__cta a .fas {
   margin-left: 5px;
@@ -1073,4 +1073,33 @@ footer .social .fab:hover {
   opacity: 0.8;
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
+}
+.sos {
+  padding: 20px 10px;
+  background-color: #3e5eab;
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+.sos p {
+  -webkit-animation: pulse 2s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
+  letter-spacing: 1px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
